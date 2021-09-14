@@ -1,0 +1,26 @@
+<clr-datagrid [(clrDgSelected)]="selected">
+  <clr-dg-column>Code</clr-dg-column>
+  <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
+  <clr-dg-column [clrDgField]="'dateofbirth'">Date of birth</clr-dg-column>
+  <clr-dg-column [clrDgField]="'gender'">City</clr-dg-column>
+  <clr-dg-column [clrDgField]="'annualsalary'" [clrDgColType]="'number'">Turnover</clr-dg-column>
+
+  <clr-dg-row *clrDgItems="let customer of customers">
+    <clr-dg-cell>{{customer.code}}</clr-dg-cell>
+    <clr-dg-cell>{{customer.name}}</clr-dg-cell>
+    <clr-dg-cell>{{customer.dateofbirth | date}}</clr-dg-cell>
+    <clr-dg-cell>{{customer.gender}}</clr-dg-cell>
+    <clr-dg-cell>
+      <span class="color-square" [style.Color]="'red'">
+        {{customer.annualsalary}}
+      </span>
+    </clr-dg-cell>
+  </clr-dg-row>
+
+  <clr-dg-footer>
+    <clr-dg-pagination #pagination [clrDgPageSize]="05">
+      <clr-dg-page-size [clrPageSizeOptions]="[05,10,15,20]">Customers per page</clr-dg-page-size>
+      {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}} of {{pagination.totalItems}} Customers
+    </clr-dg-pagination>
+  </clr-dg-footer>
+</clr-datagrid>

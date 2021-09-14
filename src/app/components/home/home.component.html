@@ -1,0 +1,61 @@
+<clr-main-container>
+  <clr-header>
+    <div class="branding">
+      <a href="..." class="nav-link">
+        <clr-icon shape="vm-bug"></clr-icon>
+        <span class="title">Admin JStore</span>
+      </a>
+    </div>
+    <div class="header-nav" [clr-nav-level]="1">
+       <h2></h2>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <main class="content-area">
+      <app-show-customers [customers]="resultClt"></app-show-customers>
+    </main>
+    <nav class="sidenav" [clr-nav-level]="2">
+      <section class="sidenav-content">
+        <a href="javascript://" class="nav-link active">
+          Products
+        </a>
+        <a href="javascript://" class="nav-link">
+          Product Categories
+        </a>
+        <a href="javascript://" class="nav-link">
+          Customers
+        </a>
+        <a href="javascript://" class="nav-link">
+          Orders
+        </a>
+      </section>
+    </nav>
+  </div>
+</clr-main-container>
+
+<!-- <h2>Welcome</h2> -->
+
+<!-- <clr-main-container>
+  <clr-header>
+
+    <div class="header-nav" [clr-nav-level]="1">
+      <a class="nav-link"><span class="nav-text">Home</span></a>
+      <a class="nav-link"><span class="nav-text">About</span></a>
+    </div>
+  </clr-header>
+  <nav class="subnav" [clr-nav-level]="1">
+
+    <a class="nav-link"><span class="nav-text">Home</span></a>
+    <a class="nav-link"><span class="nav-text">About</span></a>
+  </nav>
+  <div class="content-container">
+    <main class="content-area">
+
+    </main>
+
+    <nav class="sidenav" [clr-nav-level]="2">
+      <a class="nav-link"><span class="nav-text">Account</span></a>
+      <a class="nav-link"><span class="nav-text">Help</span></a>
+    </nav>
+  </div>
+</clr-main-container> -->
