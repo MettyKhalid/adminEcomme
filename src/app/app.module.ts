@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ClrAlertModule } from '@clr/angular';
 import { ShowCustomersComponent } from './components/show-customers/show-customers.component';
+import { CdsModule } from '@cds/angular';
+
+import '@cds/core/icon/register.js';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { ShowCustomersComponent } from './components/show-customers/show-custome
     BrowserAnimationsModule,
     ClrAlertModule,
     HttpClientModule,
+    CdsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

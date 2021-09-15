@@ -8,12 +8,21 @@ import { Customer } from 'src/app/models/customer';
 })
 export class ShowCustomersComponent implements OnInit {
 
-  @Input() customers: Customer[]=[];
+  selected: Customer[]=[];
+  @Input()
+  customers: Customer[]=[];
 
-  constructor() { }
+  constructor() { };
 
-  ngOnInit(): void {
+  ngOnInit(): void {};
 
-  }
+  onAdd(){};
+  onDelete(){};
+  onEdit(){};
+  onExportAll(){};
+  onExportSelected(){};
+
+  onDeleteItem(item: Customer){};
+  onEditItem(item: Customer){};
 
 }

@@ -8,7 +8,7 @@ import { Customer } from '../models/customer';
 })
 export class CustomersService {
 
-  apiURL = 'http://192.168.54.211:3000/api';
+  apiURL = 'http://192.168.54.202:3000/api';
 
   constructor(private httpClt: HttpClient) { }
 
